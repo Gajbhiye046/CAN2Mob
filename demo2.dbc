@@ -1,0 +1,54 @@
+VERSION ""
+
+
+NS_ : 
+    CM_
+    BA_DEF_
+    BA_
+    BA_DEF_DEF_
+
+BS_:
+
+BU_:
+
+BO_ 256 MotorController: 8 Vector_XXX
+ SG_ MotorSpeed : 0|16@1+ (0.1,0) [0|10000] "rpm" Vector_XXX
+ SG_ MotorTemperature : 16|16@1+ (1,0) [-40|210] "°C" Vector_XXX
+
+BO_ 512 BatteryManagement: 8 Vector_XXX
+ SG_ BatteryVoltage : 0|16@1+ (0.1,0) [0|6553.5] "V" Vector_XXX
+ SG_ BatteryCurrent : 16|16@1+ (0.1,0) [-3276.8|3276.7] "A" Vector_XXX
+ SG_ StateOfCharge : 32|8@1+ (0.4,0) [0|100] "%" Vector_XXX
+
+BO_ 768 VehicleStatus: 8 Vector_XXX
+ SG_ VehicleSpeed : 8|16@1+ (0.00390625,0) [0|250.996] "km/h" Vector_XXX
+
+CM_ BO_ 256 "Motor Controller Data";
+CM_ SG_ 256 MotorSpeed "Actual motor speed in revolutions per minute";
+CM_ SG_ 256 MotorTemperature "Temperature of the motor in degrees Celsius";
+CM_ BO_ 512 "Battery Management Data";
+CM_ SG_ 512 BatteryVoltage "Voltage of the battery pack";
+CM_ SG_ 512 BatteryCurrent "Current of the battery pack";
+CM_ SG_ 512 StateOfCharge "State of charge of the battery pack in percentage";
+CM_ BO_ 768 "Vehicle Status Data";
+CM_ SG_ 768 VehicleSpeed "Speed of the vehicle in kilometers per hour";
+
+BA_DEF_ SG_  "SPN" INT 0 524287;
+BA_DEF_ BO_  "VFrameFormat" ENUM  "StandardCAN","ExtendedCAN","reserved","J1939PG";
+BA_DEF_  "BusType" STRING ;
+BA_DEF_  "ProtocolType" STRING ;
+BA_DEF_DEF_  "SPN" 0;
+BA_DEF_DEF_  "VFrameFormat" "J1939PG";
+BA_DEF_DEF_  "BusType" "";
+BA_DEF_DEF_  "ProtocolType" "";
+BA_ "ProtocolType" "J1939";
+BA_ "BusType" "CAN";
+BA_ "VFrameFormat" BO_ 256 3;
+BA_ "VFrameFormat" BO_ 512 3;
+BA_ "VFrameFormat" BO_ 768 3;
+BA_ "SPN" SG_ 256 MotorSpeed 190;
+BA_ "SPN" SG_ 256 MotorTemperature 191;
+BA_ "SPN" SG_ 512 BatteryVoltage 500;
+BA_ "SPN" SG_ 512 BatteryCurrent 501;
+BA_ "SPN" SG_ 512 StateOfCharge 502;
+BA_ "SPN" SG_ 768 VehicleSpeed 84;
