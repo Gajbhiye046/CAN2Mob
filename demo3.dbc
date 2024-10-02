@@ -11,70 +11,70 @@ BS_:
 
 BU_:
 
-BO_ 2552670195 MotorController1: 8 Vector_XXX
+BO_ 2551228403 MotorController1: 8 Vector_XXX
  SG_ MotorSpeed : 0|16@1+ (0.1,0) [0|10000] "rpm" Vector_XXX
  SG_ MotorTorque : 16|16@1+ (0.1,0) [0|500] "Nm" Vector_XXX
  SG_ MotorTemperature : 32|16@1+ (1,0) [-40|210] "°C" Vector_XXX
 
-BO_ 2550395815 MotorController2: 8 Vector_XXX
+BO_ 2551752691 MotorController2: 8 Vector_XXX
  SG_ MotorSpeed2 : 0|16@1+ (0.1,0) [0|10000] "rpm" Vector_XXX
  SG_ MotorTorque2 : 16|16@1+ (0.1,0) [0|500] "Nm" Vector_XXX
  SG_ InverterTemperature : 32|16@1+ (1,0) [-40|210] "°C" Vector_XXX
 
-BO_ 2566878081 BatteryManagement1: 8 Vector_XXX
+BO_ 2550264743 BatteryManagement1: 8 Vector_XXX
  SG_ BatteryVoltage : 0|16@1+ (0.1,0) [0|6553.5] "V" Vector_XXX
  SG_ BatteryCurrent : 16|16@1+ (0.1,0) [-3276.8|3276.7] "A" Vector_XXX
  SG_ StateOfCharge : 32|8@1+ (0.4,0) [0|100] "%" Vector_XXX
  SG_ BatteryTemperature : 40|16@1+ (1,0) [-40|100] "°C" Vector_XXX
 
-BO_ 2566878593 VehicleStatus1: 8 Vector_XXX
+BO_ 2555381287 VehicleStatus1: 8 Vector_XXX
  SG_ TirePressureFL : 0|8@1+ (0.1,0) [0|100] "psi" Vector_XXX
  SG_ TirePressureFR : 8|8@1+ (0.1,0) [0|100] "psi" Vector_XXX
  SG_ VehicleSpeed : 16|16@1+ (0.00390625,0) [0|250.996] "km/h" Vector_XXX
  SG_ Odometer : 32|32@1+ (1,0) [0|4294967295] "km" Vector_XXX
 
-BO_ 2565406469 BatteryManagement2: 8 Vector_XXX
+BO_ 2566849831 BatteryManagement2: 8 Vector_XXX
  SG_ BatteryVoltage2 : 0|16@1+ (0.1,0) [0|6553.5] "V" Vector_XXX
  SG_ BatteryCurrent2 : 16|16@1+ (0.1,0) [-3276.8|3276.7] "A" Vector_XXX
 
-BO_ 2565866755 BatteryManagement3: 8 Vector_XXX
+BO_ 2566850855 BatteryManagement3: 8 Vector_XXX
  SG_ StateOfCharge2 : 32|8@1+ (0.4,0) [0|100] "%" Vector_XXX
  SG_ BatteryTemperature2 : 40|16@1+ (1,0) [-40|100] "°C" Vector_XXX
 
-BO_ 2552539123 MotorController3: 8 Vector_XXX
+BO_ 2566849319 MotorController3: 8 Vector_XXX
  SG_ MotorSpeed3 : 0|16@1+ (0.1,0) [0|10000] "rpm" Vector_XXX
  SG_ MotorTemperature3 : 16|16@1+ (1,0) [-40|210] "°C" Vector_XXX
 
-BO_ 2550330279 MotorController4: 8 Vector_XXX
+BO_ 2550441971 MotorController4: 8 Vector_XXX
  SG_ MotorTorque3 : 0|16@1+ (0.1,0) [0|500] "Nm" Vector_XXX
 
-BO_ 2550264743 InverterController1: 8 Vector_XXX
+BO_ 2550507507 InverterController1: 8 Vector_XXX
  SG_ InverterTemperature1 : 0|16@1+ (1,0) [-40|210] "°C" Vector_XXX
 
-BO_ 2551883763 InverterController2: 8 Vector_XXX
+BO_ 2550573043 InverterController2: 8 Vector_XXX
  SG_ InverterTemperature2 : 0|16@1+ (1,0) [-40|210] "°C" Vector_XXX
 
-CM_ BO_ 2552670195 "Motor Controller 1 Data";
-CM_ SG_ 2552670195 MotorSpeed "Actual motor speed in revolutions per minute";
-CM_ SG_ 2552670195 MotorTorque "Motor torque in Nm";
-CM_ SG_ 2552670195 MotorTemperature "Motor temperature in degrees Celsius";
+CM_ BO_ 2551228403 "Motor Controller 1 Data";
+CM_ SG_ 2551228403 MotorSpeed "Actual motor speed in revolutions per minute";
+CM_ SG_ 2551228403 MotorTorque "Motor torque in Nm";
+CM_ SG_ 2551228403 MotorTemperature "Motor temperature in degrees Celsius";
 
-CM_ BO_ 2550395815 "Motor Controller 2 Data";
-CM_ SG_ 2550395815 MotorSpeed2 "Actual motor speed in revolutions per minute";
-CM_ SG_ 2550395815 MotorTorque2 "Motor torque in Nm";
-CM_ SG_ 2550395815 InverterTemperature "Temperature of the inverter in degrees Celsius";
+CM_ BO_ 2551752691 "Motor Controller 2 Data";
+CM_ SG_ 2551752691 MotorSpeed2 "Actual motor speed in revolutions per minute";
+CM_ SG_ 2551752691 MotorTorque2 "Motor torque in Nm";
+CM_ SG_ 2551752691 InverterTemperature "Temperature of the inverter in degrees Celsius";
 
-CM_ BO_ 2566878081 "Battery Management 1 Data";
-CM_ SG_ 2566878081 BatteryVoltage "Voltage of the battery pack in volts";
-CM_ SG_ 2566878081 BatteryCurrent "Current of the battery pack in amperes";
-CM_ SG_ 2566878081 StateOfCharge "State of charge of the battery pack in percentage";
-CM_ SG_ 2566878081 BatteryTemperature "Temperature of the battery in degrees Celsius";
+CM_ BO_ 2550264743 "Battery Management 1 Data";
+CM_ SG_ 2550264743 BatteryVoltage "Voltage of the battery pack in volts";
+CM_ SG_ 2550264743 BatteryCurrent "Current of the battery pack in amperes";
+CM_ SG_ 2550264743 StateOfCharge "State of charge of the battery pack in percentage";
+CM_ SG_ 2550264743 BatteryTemperature "Temperature of the battery in degrees Celsius";
 
-CM_ BO_ 2566878593 "Vehicle Status 1 Data";
-CM_ SG_ 2566878593 VehicleSpeed "Vehicle speed in kilometers per hour";
-CM_ SG_ 2566878593 Odometer "Odometer reading in kilometers";
-CM_ SG_ 2566878593 TirePressureFL "Tire pressure of front left tire in psi";
-CM_ SG_ 2566878593 TirePressureFR "Tire pressure of front right tire in psi";
+CM_ BO_ 2555381287 "Vehicle Status 1 Data";
+CM_ SG_ 2555381287 VehicleSpeed "Vehicle speed in kilometers per hour";
+CM_ SG_ 2555381287 Odometer "Odometer reading in kilometers";
+CM_ SG_ 2555381287 TirePressureFL "Tire pressure of front left tire in psi";
+CM_ SG_ 2555381287 TirePressureFR "Tire pressure of front right tire in psi";
 
 BA_DEF_ SG_ "SPN" INT 0 524287;
 BA_DEF_ BO_ "VFrameFormat" ENUM "StandardCAN","ExtendedCAN","reserved","J1939PG";
@@ -86,16 +86,16 @@ BA_DEF_DEF_ "BusType" "";
 BA_DEF_DEF_ "ProtocolType" "";
 BA_ "ProtocolType" "J1939";
 BA_ "BusType" "CAN";
-BA_ "VFrameFormat" BO_ 2552670195 2; 
-BA_ "VFrameFormat" BO_ 2550395815 2;
-BA_ "VFrameFormat" BO_ 2566878081 2;
-BA_ "VFrameFormat" BO_ 2566878593 2;
-BA_ "SPN" SG_ 2552670195 MotorSpeed 1001;
-BA_ "SPN" SG_ 2552670195 MotorTorque 1002;
-BA_ "SPN" SG_ 2552670195 MotorTemperature 1003;
-BA_ "SPN" SG_ 2566878593 VehicleSpeed 1101;
-BA_ "SPN" SG_ 2566878081 BatteryVoltage 2001;
-BA_ "SPN" SG_ 2566878081 BatteryCurrent 2002;
-BA_ "SPN" SG_ 2566878081 StateOfCharge 2003;
-BA_ "SPN" SG_ 2566878593 TirePressureFL 1102;
-BA_ "SPN" SG_ 2566878593 TirePressureFR 1103;
+BA_ "VFrameFormat" BO_ 2551228403 2; 
+BA_ "VFrameFormat" BO_ 2551752691 2;
+BA_ "VFrameFormat" BO_ 2550264743 2;
+BA_ "VFrameFormat" BO_ 2555381287 2;
+BA_ "SPN" SG_ 2551228403 MotorSpeed 1001;
+BA_ "SPN" SG_ 2551228403 MotorTorque 1002;
+BA_ "SPN" SG_ 2551228403 MotorTemperature 1003;
+BA_ "SPN" SG_ 2555381287 VehicleSpeed 1101;
+BA_ "SPN" SG_ 2550264743 BatteryVoltage 2001;
+BA_ "SPN" SG_ 2550264743 BatteryCurrent 2002;
+BA_ "SPN" SG_ 2550264743 StateOfCharge 2003;
+BA_ "SPN" SG_ 2555381287 TirePressureFL 1102;
+BA_ "SPN" SG_ 2555381287 TirePressureFR 1103;
