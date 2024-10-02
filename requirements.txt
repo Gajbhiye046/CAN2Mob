@@ -2,7 +2,6 @@ Flask
 cantools
 matplotlib
 seaborn
-binascii
 time
 threading
 random
