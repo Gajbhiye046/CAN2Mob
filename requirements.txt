@@ -2,7 +2,6 @@ Flask
 cantools
 matplotlib
 seaborn
-time
 threading
 random
 struct
