@@ -147,7 +147,7 @@ def generate_raw_can_data():
         
 
     #Print the formatted CAN data
-    #print("Generated CAN data (messageID#message):")
+    print("Generated CAN data (messageID#message):")
     for can_id, message in formatted_can_data.items():
        print(message)
 
