@@ -2,6 +2,3 @@ Flask
 cantools
 matplotlib
 seaborn
-threading
-random
-struct
