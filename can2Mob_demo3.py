@@ -172,4 +172,4 @@ def generate_and_host_can_data():
 
 if __name__ == '__main__':
     threading.Thread(target=generate_and_host_can_data, daemon=True).start()
-    socketio.run(app, host='0.0.0.0', port=5000)
+    socketio.run(app, host='0.0.0.0', port=5000, allow_unsafe_werkzeug=True)
