@@ -2,3 +2,4 @@ Flask
 cantools
 matplotlib
 seaborn
+flask_socketio
